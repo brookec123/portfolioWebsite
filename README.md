@@ -1,42 +1,54 @@
 # My Portfolio Website
 
-Welcome to my portfolio website! This website showcases my skills and projects as a web developer.
+This is my personal portfolio website, where I showcase my work and share information about myself. The website is built using HTML, CSS, and JavaScript, and is hosted using GitHub Pages.
 
 ## Table of Contents
 
-- [Description](#description)
-- [Demo](#demo)
-- [Technologies](#technologies)
-- [Installation](#installation)
+- [About](#about)
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Installation and Setup](#installation-and-setup)
 - [Usage](#usage)
 - [Contributing](#contributing)
+- [Contact](#contact)
 
-## Description
+## About
 
-This website was built using HTML, CSS, and JavaScript. It includes information about my background, education, work experience, and projects. The website is responsive and optimized for desktop and mobile devices.
+My portfolio website is designed to provide visitors with an overview of my skills, experience, and projects. The website is easy to navigate, with a clean and modern design that highlights my work.
 
-## Demo
+## Features
 
-Click [here](https://example.com) to view a live demo of the website.
+Some of the features of my portfolio website include:
 
-## Technologies
+- Responsive design for optimal viewing on desktop and mobile devices
+- A dedicated "Projects" section where visitors can view my latest work
+- An "About Me" page that provides background information about me and my experience
+- A contact form that visitors can use to get in touch with me directly
+- Social media links to my LinkedIn and GitHub profiles
+
+## Technologies Used
+
+The website is built using the following technologies:
 
 - HTML
 - CSS
 - JavaScript
-- Bootstrap
-- jQuery
 
-## Installation
+## Installation and Setup
 
-1. Clone the repository: git clone https://github.com/brookec123/portfolioWebsite
-2. Open the project in your favorite code editor.
-3. Open the `index.html` file in your browser.
+To run the website locally, follow these steps:
+
+1. Clone the repository
+2. Open the `index.html` file in your web browser
 
 ## Usage
 
-Feel free to use this website as a template for your own portfolio website. Replace my information and projects with your own, and customize the design to your liking.
+The website is designed for visitors who are interested in learning more about me and my work. Visitors can browse my portfolio, learn about my experience, and get in touch with me directly through the contact form.
 
 ## Contributing
 
-If you find any issues or have suggestions for improvements, please open an issue or pull request on GitHub.
+If you find a bug or have a suggestion for improving the website, please open an issue or submit a pull request.
+
+## Contact
+
+If you have any questions or comments, please feel free to message me here on GitHub.
