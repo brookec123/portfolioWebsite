@@ -223,7 +223,7 @@ a:focus {
     }
 
     .resume-btn.nav-sticky {
-        color: #EF233C;
+        color: #af6c74;
         background: #ffffff !important;
         box-shadow: inset 0 0 0 0 #EF233C;
         border-color: #000000;
@@ -364,7 +364,11 @@ a:focus {
     color: #ffffff;
 }
 
-.hero .hero-btn .btn {
+.hero-btn{
+    margin-top: 50vh; 
+}
+
+.hero .hero-btn .btn { 
     margin-top: 35px;
     color: #EF233C;
     background: #ffffff;
@@ -534,6 +538,7 @@ a:focus {
 }
 
 .about .section-header {
+    padding-top: 20px;
     margin-bottom: 30px;
 }
 
@@ -561,19 +566,41 @@ a:focus {
     margin-bottom: 30px;
 }
 
-.about .skill-name {
-    margin-top: 15px;
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns of equal width */
+    gap: 30px; /* gap between grid items */
+    margin-bottom: 30px;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* set width to 100% */
+    max-width: 1200px; /* set max-width to limit the size of the grid */
 }
 
-.about .skill-name p {
-    display: inline-block;
-    margin-bottom: 5px;
+.about .skill-container {
+    background-color: #EF233C;
+    width: 150px;
+    height: 150px;
+    text-align: center;
+    display: flex;
+    flex-direction: column; /* change flex direction to column */
+    justify-content: center; /* align items vertically */
+    align-items: center; /* align items horizontally */
+}
+
+.about .skill-container i {
+    padding-top: 20px;
+    font-size: 100px;
+    color: #ffffff;
+    align-items: center;
+}
+
+.about .skill-container .skill-name{
+    display: block;
+    padding-top: 10px; /* Add some space between the icon and text */
     font-size: 16px;
-    font-weight: 400;
-}
-
-.about .skill-name p:last-child {
-    float: right;
+    color: #ffffff;
+    text-align: center;
 }
 
 .about .progress {
