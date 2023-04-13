@@ -19,11 +19,10 @@
         <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
 
         <!-- CSS Stylesheet -->
-        <link rel="stylesheet" href="css/portfolio.css">
+        <link rel="stylesheet" href="css/style.css">
     </head>
 
     <body data-spy="scroll" data-target=".navbar" data-offset="51">
-        <body data-spy="scroll" data-target=".navbar" data-offset="51">
         <!-- Nav Bar Start -->
         <div class="navbar navbar-expand-lg bg-light navbar-light">
             <div class="container-fluid">
@@ -31,28 +30,46 @@
                 <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-
+        
                 <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
-                    <div class="navbar-nav ml-auto">
-                        <a href="#home" class="nav-item nav-link active">Home</a>
-                        <a href="#about" class="nav-item nav-link">About</a>
-                        <a href="#portfolio" class="nav-item nav-link">Portfolio</a>
-                        <a href="#blog" class="nav-item nav-link">Blog</a>
-                        <a href="#contact" class="nav-item nav-link">Contact</a>
-                        <button class="resume-btn" onclick="openPDF()">Resume</button>
-                    </div>
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#about" class="nav-link">About</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link active dropdown-toggle" data-toggle="dropdown">Portfolio</a>
+                            <div class="dropdown-menu">
+                                <a href="garden-clicker.html" class="dropdown-item">Garden Clicker</a>
+                                <a href="another-portfolio-item.html" class="dropdown-item">Another Portfolio Item</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#blog" class="nav-link">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#contact" class="nav-link">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <button class="resume-btn" onclick="openPDF()">Resume</button>
+                        </li>
+                    </ul>
                 </div>
             </div>
-        </div>
+        </div>        
         <!-- Nav Bar End -->
 
-         <!-- Hero Start -->
-         <div class="hero">
+        
+        <!-- Hero Start -->
+        <div class="hero">
             <div class="container-fluid">
                 <div class="row align-items-center">
                     <div class="col-sm-12 col-md-6">
                         <div class="hero-content">
-                            
+                                <p></p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -60,20 +77,20 @@
         </div>
         <!-- Hero End -->
 
-        <div class="portfolio" id="portfolio">
+        <!-- Portfolio Start -->
+        <div class="portfolio">
             <div class="container">
-                <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
+                <div class="section-header text-center  wow zoomIn" data-wow-delay="0.1s">
                     <p>My Portfolio</p>
                     <h2>Garden Clicker</h2>
                 </div>
                 <div class="images">
-                    <img src="img/blog-1.jpg">
-                </div>
-                <div class="images">
-                    <img src="img/blog-2.jpg">
-                </div>
-                <div class="images">
-                    <img src="img/blog-1.jpg">
+                    <div class="img-container">
+                        <img src="img/portfolio-1.jpg"></img>
+                    </div>
+                    <div class="img-container">
+                        <img src="img/portfolio-1.jpg"></img>
+                    </div>
                 </div>
             </div>
         </div>

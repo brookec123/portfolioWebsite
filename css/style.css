@@ -153,7 +153,6 @@ a:focus {
     font-weight: 700;
     letter-spacing: 2px;
     transition: .5s;
-    
 }
 
 .navbar .navbar-brand img {
@@ -163,9 +162,25 @@ a:focus {
 
 .navbar .dropdown-menu {
     margin-top: 0;
+    font-size: 14px;
     border: 0;
     border-radius: 0;
-    background: #f8f9fa;
+    background: #ffffff;
+}
+
+.navbar-nav > li.dropdown:hover > .dropdown-menu {
+    display: block;
+}
+
+.navbar .dropdown-toggle:after {
+    display: inline-block;
+    margin-left: .255em;
+    vertical-align: .255em;
+    content: "";
+    border-top: .3em solid;
+    border-right: .3em solid transparent;
+    border-bottom: 0;
+    border-left: .3em solid transparent;
 }
 
 .resume-btn {
