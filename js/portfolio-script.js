@@ -70,70 +70,13 @@
             loop: true
           });
         }
-      
-      
-    
-    // Skills
-    $('.skills').waypoint(function () {
-        $('.progress .progress-bar').each(function () {
-            $(this).css("width", $(this).attr("aria-valuenow") + '%');
-        });
-    }, {offset: '80%'});
-
-
-    // Testimonials carousel
-    $(".testimonials-carousel").owlCarousel({
-        center: true,
-        autoplay: true,
-        dots: true,
-        loop: true,
-        responsive: {
-            0:{
-                items:1
-            }
-        }
-    });
     
     
-    
-    // Portfolio filter
-    var portfolioIsotope = $('.portfolio-container').isotope({
-        itemSelector: '.portfolio-item',
-        layoutMode: 'fitRows'
-    });
-
-    $('#portfolio-filter li').on('click', function () {
-        $("#portfolio-filter li").removeClass('filter-active');
-        $(this).addClass('filter-active');
-        portfolioIsotope.isotope({filter: $(this).data('filter')});
-    });
     
 })(jQuery);
 
 function openPDF() {
     // Replace 'path/to/your.pdf' with the path to your PDF file on the desktop
-    const url = 'file:///C:/Users/Brooke/OneDrive/Desktop/sideProjects/personalSite/developer-portfolio-template/Brooke-Cronin-resume.pdf';
+    const url = 'file:///C:/Users/Brooke/OneDrive/Desktop/sideProjects/personalSite/portfolioWebsite/firstlastresume.pdf';
     window.open(url, '_blank');
-}
-
-var slideIndex = 1;
-showSlides(slideIndex);
-
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  if (n > slides.length) {
-    slideIndex = 1;
-  }    
-  if (n < 1) {
-    slideIndex = slides.length;
-  }
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";  
-  }
-  slides[slideIndex-1].style.display = "block";  
 }

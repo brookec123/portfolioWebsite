@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>First Last</title>
+
+        <!-- Google Font -->
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+        <!-- CSS Libraries -->
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+        <link href="lib/animate/animate.min.css" rel="stylesheet">
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+        <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+        <!-- CSS Stylesheet -->
+        <link rel="stylesheet" href="css/portfolio.css">
+    </head>
+
+    <body data-spy="scroll" data-target=".navbar" data-offset="51">
+        <!-- Nav Bar Start -->
+        <div class="navbar navbar-expand-lg bg-light navbar-light">
+            <div class="container-fluid">
+                <a href="index.html" class="navbar-brand">First Last</a>
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+        
+                <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#about" class="nav-link">About</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link active dropdown-toggle" data-toggle="dropdown">Portfolio</a>
+                            <div class="dropdown-menu">
+                                <a href="garden-clicker.html" class="dropdown-item">Garden Clicker</a>
+                                <a href="turn-and-fortune.html" class="dropdown-item">Turn and Fortune</a>
+                                <a href="from-python-to-java.html" class="dropdown-item">From Python to Java</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#blog" class="nav-link">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#contact" class="nav-link">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <button class="resume-btn" onclick="openPDF()">Resume</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>        
+        <!-- Nav Bar End -->
+
+
+        <!-- Hero Start -->
+        <div class="hero">
+            <div class="container-fluid">
+                <div class="row align-items-center">
+                    <div class="col-sm-12 col-md-6">
+                        <div class="hero-content">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Hero End -->
+
+        <!-- Portfolio Start -->
+        <div class="portfolio">
+            <div class="container">
+                <div class="section-header text-center  wow zoomIn" data-wow-delay="0.1s">
+                    <p>My Portfolio</p>
+                    <h2>From Python To Java</h2>
+                </div>
+                <div class="project-description">
+                    <p>From Python to Java is a Java-based project that simplifies the process of transitioning from Python to Java for developers. 
+                        The project is designed with JavaFX and offers a Python syntax reference for users as they code in Java. 
+                        This tool is created to assist users in adapting to Java syntax and help Python developers advance their skills smoothly. 
+                        The project comes with a user-friendly interface, making it easy for anyone to navigate and use, regardless of their level of expertise. 
+                        Whether you're a beginner or an experienced developer, From Python to Java is a valuable resource that will help you become proficient 
+                        in both programming languages.</p>
+                </div>
+                <div class="images">
+                    <div class="img-container">
+                        <img src="img/portfolio-1.jpg"></img>
+                        <img src="img/portfolio-1.jpg"></img>
+                        <img src="img/portfolio-1.jpg"></img>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio End -->
+
+        <!-- Footer Start -->
+        <div class="footer wow fadeIn" data-wow-delay="0.3s">
+            <div class="container-fluid">
+                <div class="container">
+                    <div class="footer-info">
+                        <h2>First Last</h2>
+                        <div class="footer-menu">
+                            <p>firstlast123@gmail.com</p>
+                        </div>
+                        <div class="footer-social">
+                            <a href="https://github.com/" target="_blank"><i class="fa fa-github"></i></a>
+                            <a href="https://www.linkedin.com/in/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+        
+        <!-- Back to top button -->
+        <a href="#" class="btn back-to-top"><i class="fa fa-chevron-up"></i></a>
+        
+        <!-- Pre Loader -->
+        <div id="loader" class="show">
+            <div class="loader"></div>
+        </div>
+
+        <!-- JavaScript Libraries -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/wow/wow.min.js"></script>
+        <script src="lib/waypoints/waypoints.min.js"></script>
+        <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
+        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+        <script src="lib/isotope/isotope.pkgd.min.js"></script>
+        <script src="lib/lightbox/js/lightbox.min.js"></script>
+        
+        <!-- Contact Javascript File -->
+        <script src="mail/jqBootstrapValidation.min.js"></script>
+        <script src="mail/contact.js"></script>
+
+        <!-- Main Javascript -->
+        <script src="js/portfolio-script.js"></script>
+    </body>
+</html>

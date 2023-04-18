@@ -96,15 +96,15 @@
     
     
     
-    // Portfolio filter
+    // Portfolio isotope and filter
     var portfolioIsotope = $('.portfolio-container').isotope({
         itemSelector: '.portfolio-item',
         layoutMode: 'fitRows'
     });
+    $('#portfolio-flters li').on('click', function () {
+        $("#portfolio-flters li").removeClass('active');
+        $(this).addClass('active');
 
-    $('#portfolio-filter li').on('click', function () {
-        $("#portfolio-filter li").removeClass('filter-active');
-        $(this).addClass('filter-active');
         portfolioIsotope.isotope({filter: $(this).data('filter')});
     });
     
@@ -112,7 +112,7 @@
 
 function openPDF() {
     // Replace 'path/to/your.pdf' with the path to your PDF file on the desktop
-    const url = 'file:///C:/Users/Brooke/OneDrive/Desktop/sideProjects/personalSite/developer-portfolio-template/Brooke-Cronin-resume.pdf';
+    const url = 'file:///C:/Users/Brooke/OneDrive/Desktop/sideProjects/personalSite/portfolioWebsite/firstlastresume.pdf';
     window.open(url, '_blank');
 }
 
