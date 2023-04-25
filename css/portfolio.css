@@ -553,19 +553,20 @@ a:focus {
 }  
 
 .swiper {
-    width: 100%;
-    height: 100%;
+    width: 640px;
+    height: 360px;
+}
+
+.swiper .swiper-wrapper img {
+    width: 640px;
+    height: 360px;
 }
 
 .swiper-button-next,
 .swiper-button-prev {
-  color: rgb(37, 46, 107) !important;
+    color: rgb(37, 46, 107) !important;
 }
-    
-.portfolio .img-container img {
-    max-width: 50%;
-    height: auto;
-}
+
 .video-container {
     display: flex;
     justify-content: center;

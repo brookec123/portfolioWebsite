@@ -1150,11 +1150,6 @@ a:focus {
     background: rgb(37, 46, 107);
 }
 
-.contact .container-fluid {
-    background: url(../img/contact.jpg) left center no-repeat;
-    background-size: contain;
-}
-
 .contact .contact-form {
     position: relative;
     padding: 90px 0 90px 45px;
@@ -1172,7 +1167,7 @@ a:focus {
 
 .contact .contact-form textarea {
     color: #ffffff;
-    height: 90px;
+    height: 150px;
     padding: 15px 0;
     background: none;
     border-radius: 0;
@@ -1190,14 +1185,14 @@ a:focus {
     color: #ffffff;
 }
 
-.contact .contact-form .btn {
+.contact .contact-form button {
     margin-top: 35px;
     color: rgb(37, 46, 107);
     background: #ffffff;
     box-shadow: inset 0 0 0 50px #ffffff;
 }
 
-.contact .contact-form .btn:hover {
+.contact .contact-form button:hover {
     color: #ffffff;
     background: transparent;
     box-shadow: inset 0 0 0 0 #ffffff;

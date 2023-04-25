@@ -18,6 +18,8 @@
 
         <!-- CSS Stylesheet -->
         <link rel="stylesheet" href="css/portfolio.css">
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
     </head>
 
     <body data-spy="scroll" data-target=".navbar" data-offset="51">
@@ -32,18 +34,24 @@
                 <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
-                            <a href="index.html" class="nav-link">Home</a>
+                            <a href="#home" class="nav-link">Home</a>
                         </li>
                         <li class="nav-item">
                             <a href="#about" class="nav-link">About</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a href="#" class="nav-link active dropdown-toggle" data-toggle="dropdown">Portfolio</a>
+                            <a href="#portfolio" class="nav-link active dropdown-toggle" data-toggle="dropdown">Portfolio</a>
                             <div class="dropdown-menu">
                                 <a href="garden-clicker.html" class="dropdown-item">Garden Clicker</a>
                                 <a href="turn-and-fortune.html" class="dropdown-item">Turn and Fortune</a>
+                                <a href="residential-evaluation.html" class="dropdown-item">Residential Evaluation</a>
                                 <a href="from-python-to-java.html" class="dropdown-item">From Python to Java</a>
+                                <a href="craft-it.html" class="dropdown-item">Craft It</a>
+                                <a href="personal-portfolio.html" class="dropdown-item">Personal Portfolio</a>
+                                <a href="" class="dropdown-item"></a>
                             </div>
+                        </li>
+                            <a href="#experience" class="nav-item nav-link">Experience</a>
                         </li>
                         <li class="nav-item">
                             <a href="#blog" class="nav-link">Blog</a>
@@ -77,20 +85,37 @@
         <!-- Portfolio Start -->
         <div class="portfolio">
             <div class="container">
-                <div class="section-header text-center  wow zoomIn" data-wow-delay="0.1s">
+                <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
                     <p>My Portfolio</p>
                     <h2>Craft It</h2>
                 </div>
                 <div class="project-description">
-                    <p>This is a 2D clicker game where you want to gain the most Garden Coins (GC) and squash the evil bugs when they pop up on the screen so that they don't steal your coins or one of your ten hearts. You can also try speed running this game by maxing out all of the upgrades before dyeing.</p>
+                    <h5>Description</h5>
+                    <p></p>
                 </div>
-                <div class="images">
-                    <div class="img-container">
-                        <img src="img/portfolio-1.jpg"></img>
-                        <img src="img/portfolio-1.jpg"></img>
-                        <img src="img/portfolio-1.jpg"></img>
-                    </div>
+                <div class="tools-used">
+                    <h5>Tools Used</h5>
+                    <li>
+                        HTML5
+                    </li>
+                    <li>
+                        CSS3
+                    </li>
+                    <li>
+                        JavaScript
+                    </li>
+                    <li>
+                        jQuery
+                    </li>
+                    <p></p>
                 </div>
+                <div class="learn-description">
+                    <h5>What I Learned From This Project</h5>
+                    <li>How to create a website</li>
+                    <li>How to make a contact form that works</li>
+                    <li></li>
+                    <p></p>
+                </div>             
             </div>
         </div>
         <!-- Portfolio End -->
@@ -105,6 +130,7 @@
                             <p>firstlast123@gmail.com</p>
                         </div>
                         <div class="footer-social">
+                            <a href="https://itch.io/" target="_blank"><i class="fab fa-itch-io"></i></a>
                             <a href="https://github.com/" target="_blank"><i class="fa fa-github"></i></a>
                             <a href="https://www.linkedin.com/in/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
                         </div>
@@ -123,6 +149,7 @@
         </div>
 
         <!-- JavaScript Libraries -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
         <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
         <script src="lib/easing/easing.min.js"></script>
