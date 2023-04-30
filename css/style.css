@@ -583,7 +583,7 @@ a:focus {
 
 .skills-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 columns of equal width */
+    grid-template-columns: repeat(4, 1fr); /* 4 columns of equal width */
     gap: 30px; /* gap between grid items */
     margin-bottom: 30px;
     justify-content: center;
@@ -594,13 +594,14 @@ a:focus {
 
 .about .skill-container {
     background-color: rgb(37, 46, 107);
-    width: 150px;
-    height: 150px;
+    width: 160px;
+    height: 160px;
     text-align: center;
-    display: flex;
     flex-direction: column; /* change flex direction to column */
     justify-content: center; /* align items vertically */
     align-items: center; /* align items horizontally */
+    display: flex;
+    margin: auto;
 }
 
 .about .skill-container i {

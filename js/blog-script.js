@@ -77,6 +77,6 @@
 
 function openPDF() {
     // Replace 'path/to/your.pdf' with the path to your PDF file on the desktop
-    const url = 'file:///C:/Users/Brooke/OneDrive/Desktop/sideProjects/personalSite/portfolioWebsite/firstlastresume.pdf';
+    const url = './Brooke-Cronin-resume.pdf';
     window.open(url, '_blank');
 }
