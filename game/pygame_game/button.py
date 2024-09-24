@@ -17,12 +17,12 @@ class Button:
         txt = self.font.render(self.text, True, WHITE)
         screen.blit(txt, self.button_rect.topleft)
         
-    def open_link(self, player:Player) -> None:
-        if self.button_rect.colliderect(player.get_rect()) and not self.button_active:
-            print(self.text)
+    def open_link(self, player:Player, background_rect) -> None:
+        player_rect = player.get_rect(background_rect)
+        if self.button_rect.colliderect(player_rect) and not self.button_active:
             webbrowser.open(self.link)
             self.button_active = True
-        if not self.button_rect.colliderect(player.get_rect()):
+        if not self.button_rect.colliderect(player_rect):
             self.button_active = False
     
     def move(self, x_move:int, y_move:int) -> None:

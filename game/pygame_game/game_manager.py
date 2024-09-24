@@ -55,8 +55,4 @@ class GameManager:
 
         self.player.draw(self.screen)
 
-        # Update button status based on player position
-        for btn in self.buttons:
-            btn.open_link(self.player)
-
         

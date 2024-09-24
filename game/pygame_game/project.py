@@ -4,7 +4,7 @@ from constants import *
 
 
 class Project:
-    def __init__(self, x:int, y:int, title:str, description:[], source_code_link:str, video_demo_location:str) -> None:
+    def __init__(self, x:int, y:int, title:str, description, source_code_link:str, video_demo_location:str) -> None:
         self.title_font = pygame.font.Font(None, 36)
         self.desc_font = pygame.font.Font(None, 20)
         self.top_corner_x = x

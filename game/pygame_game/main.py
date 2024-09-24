@@ -47,7 +47,12 @@ def main() -> None:
             gm.move_bkg(0, gm.player.speed)
         if keys[pygame.K_DOWN]:
             gm.move_bkg(0, -gm.player.speed)
-
+        # Update button status based on player position
+        for btn in gm.buttons:
+            btn.open_link(gm.player, gm.background_rect)
+        for proj in gm.projects:
+            proj.btn_source_code_link.open_link(gm.player, gm.background_rect)
+            
         gm.update()
         pygame.display.flip()
         gm.clock.tick(FPS)
