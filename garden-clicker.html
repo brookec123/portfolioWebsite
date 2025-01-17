@@ -1,207 +1,182 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <title>Brooke Cronin</title>
 
-        <!-- Google Font -->
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<head>
+    <meta charset="utf-8">
+    <title>Brooke Cronin</title>
 
-        <!-- CSS Libraries -->
-        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-        <link href="lib/animate/animate.min.css" rel="stylesheet">
-        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-        <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
 
-        <!-- CSS Stylesheet -->
-        <link rel="stylesheet" href="css/portfolio.css">
+    <!-- CSS Libraries -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
 
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
-    </head>
+    <!-- Navbar Stylesheet -->
+    <link rel="stylesheet" href="css/navbar.css">
 
-    <body data-spy="scroll" data-target=".navbar" data-offset="51">
-        <!-- Nav Bar Start -->
-        <div class="navbar navbar-expand-lg bg-light navbar-light">
-            <div class="container-fluid">
-                <a href="index.html" class="navbar-brand">Brooke Cronin</a>
-                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-        
-                <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item">
-                            <a href="index.html#home" class="nav-link">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="index.html#about" class="nav-link">About</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a href="index.html#portfolio" class="nav-link active dropdown-toggle" data-toggle="dropdown">Portfolio</a>
-                            <div class="dropdown-menu">
-                                <a href="garden-clicker.html" class="dropdown-item">Garden Clicker</a>
-                                <a href="turn-and-fortune.html" class="dropdown-item">Turn and Fortune</a>
-                                <a href="residential-evaluation.html" class="dropdown-item">Residential Evaluation</a>
-                                <a href="from-python-to-java.html" class="dropdown-item">From Python to Java</a>
-                                <a href="craft-it.html" class="dropdown-item">Craft It</a>
-                                <a href="personal-portfolio.html" class="dropdown-item">Personal Portfolio</a>
-                                <a href="" class="dropdown-item"></a>
-                            </div>
-                        </li>
-                            <a href="index.html#experience" class="nav-item nav-link">Experience</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="index.html#blog" class="nav-link">Blog</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="index.html#contact" class="nav-link">Contact</a>
-                        </li>
-                        <li class="nav-item">
-                            <button class="resume-btn" onclick="openPDF()">Resume</button>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>        
-        <!-- Nav Bar End -->
+    <!-- Contact Form Stylesheet -->
+    <link rel="stylesheet" href="css/contact-form.css">
+
+    <!-- Footer Stylesheet -->
+    <link rel="stylesheet" href="css/footer.css">
+
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="css/portfolio.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="51">
+    <!-- Nav Bar Start -->
+    <div id="navbar"></div>
+    <!-- Nav Bar End -->
 
 
-        <!-- Hero Start -->
-        <div class="hero">
-            <div class="container-fluid">
-                <div class="row align-items-center">
-                    <div class="col-sm-12 col-md-6">
-                        <div class="hero-content">
-                        </div>
+    <!-- Hero Start -->
+    <div class="hero">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <div class="col-sm-12 col-md-6">
+                    <div class="hero-content">
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Hero End -->
+    </div>
+    <!-- Hero End -->
 
-        <!-- Portfolio Start -->
-        <div class="portfolio">
-            <div class="container">
-                <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
-                    <p>My Portfolio</p>
-                    <h2>Garden Clicker</h2>
-                </div>
-                <div class="project-description">
-                    <h5>Description</h5>
-                    <p>"Garden Clicker" is an immersive 2D game that requires players to accumulate Garden Coins (GC) 
-                        while protecting them from malicious bugs that frequently appear on the screen. 
-                        To safeguard your precious coins and ten hearts, you must swiftly click on the bugs and vanquish them before they can cause any harm. 
-                        The game also allows for an exciting challenge of speedrunning, 
-                        where players aim to max out all of the available upgrades before completing the game. 
-                        With vibrant graphics, immersive sound effects, and engaging gameplay mechanics, 
-                        "Garden Clicker" provides an enjoyable and addictive gaming experience for players of all ages.</p>
-                </div>
-                <div class="images">
-                    <h5>Screenshots</h5>
-                    <!-- Slider main container -->
-                    <div class="swiper">
-                        <div class="swiper-wrapper">
-                            <!-- Images -->
-                            <div class="swiper-slide"><img src="img/gcTitle.png"></img></div>
-                            <div class="swiper-slide"><img src="img/gcInstr.png"></img></div>
-                            <div class="swiper-slide"><img src="img/gcPlay.png"></img></div>
-                            <div class="swiper-slide"><img src="img/gcGameDone.png"></img></div>
-                        </div>
-                        <div class="swiper-pagination"></div>
-                        <div class="swiper-button-prev"></div>
-                        <div class="swiper-button-next"></div>
+    <!-- Portfolio Start -->
+    <div class="portfolio">
+        <div class="container">
+            <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
+                <p>My Portfolio</p>
+                <h2>Garden Clicker</h2>
+            </div>
+            <div class="project-description">
+                <h5>Description</h5>
+                <p>"Garden Clicker" is an immersive 2D game that requires players to accumulate Garden Coins (GC)
+                    while protecting them from malicious bugs that frequently appear on the screen.
+                    To safeguard your precious coins and ten hearts, you must swiftly click on the bugs and vanquish
+                    them before they can cause any harm.
+                    The game also allows for an exciting challenge of speedrunning,
+                    where players aim to max out all of the available upgrades before completing the game.
+                    With vibrant graphics, immersive sound effects, and engaging gameplay mechanics,
+                    "Garden Clicker" provides an enjoyable and addictive gaming experience for players of all ages.</p>
+            </div>
+            <div class="images">
+                <h5>Video and Screenshots</h5>
+                <!-- Slider main container -->
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><video id="video" width="640" height="360" controls>
+                                <source src="vid/Garden Clicker Video Showcase.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video></div>
+                        <!-- Images -->
+                        <div class="swiper-slide"><img src="img/gcTitle.png"></img></div>
+                        <div class="swiper-slide"><img src="img/gcInstr.png"></img></div>
+                        <div class="swiper-slide"><img src="img/gcPlay.png"></img></div>
+                        <div class="swiper-slide"><img src="img/gcGameDone.png"></img></div>
                     </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
                 </div>
-                <div class="video-container">
-                    <video width="640" height="360" controls>
-                      <source src="vid/Garden Clicker Video Showcase.mp4" type="video/mp4">
-                      Your browser does not support the video tag.
-                    </video>
+            </div>
+            <div class="timestamp-description">
+                <h5>Video Timestamps</h5>
+                <div class="timestamp">
+                    <button onclick="setVideoTime(3)">0:03</button>
+                    <p> - Instructions</p>
                 </div>
-                <div class="timestamp-description">
-                    <h5>Video Timestamps</h5>
-                    <p>0:03 - Instructions</p>
-                    <p>0:08 - Start of Play through. Top right of screen shows how much coins you currently have. 
-                        Top left of screen shows the number of lives you have left. 
-                        Underneath on the left side is the upgrades. 
-                        The name, current cost, and a progress bar showing how much you have purchased each upgrade is shown on each upgrade button. 
+                <div class="timestamp">
+                    <button onclick="setVideoTime(8)">0:08</button>
+                    <p> - Start of play through. Top right of screen shows how much coins you currently have.
+                        Top left of screen shows the number of lives you have left.
+                        Underneath on the left side is the upgrades.
+                        The name, current cost, and a progress bar showing how much you have purchased each upgrade is
+                        shown
+                        on each upgrade button.
                         When hovering over the upgrade buttons, a description of what the upgrade does is shown.</p>
-                    <p>0:21 - Start of a bug attack. You must click all of the bugs before they disappear and steal your coins/lives.</p>
                 </div>
-                <div class="tools-used">
-                    <h5>Tools Used</h5>
-                    <li>
-                        Unreal Engine version 4.27.2
-                    </li>
-                    <li>
-                        C++
-                    </li>
-                    <li>
-                        Unreal Engine blueprints and widgets
-                    </li>
-                    <p></p>
-                </div>
-                <div class="learn-description">
-                    <h5>What I Learned From This Project</h5>
-                    <li>The basics of Unreal Engine</li>
-                    <li>How to use Unreal Engine blueprints and C++ code in my project</li>
-                    <li>How to animate my widgets in Unreal Engine</li>
-                    <li>How to add sound effects</li>
-                    <li>How to switch between different widgets</li>
-                    <p></p>
-                </div>    
-            </div>
-        </div>
-        <!-- Portfolio End -->
-
-        <!-- Footer Start -->
-        <div class="footer wow fadeIn" data-wow-delay="0.3s">
-            <div class="container-fluid">
-                <div class="container">
-                    <div class="footer-info">
-                        <h2>Brooke Cronin</h2>
-                        <div class="footer-menu">
-                            <p>brookecronin123@gmail.com</p>
-                        </div>
-                        <div class="footer-social">
-                            <a href="https://brookec25.itch.io" target="_blank"><i class="fab fa-itch-io"></i></a>
-                            <a href="https://github.com/brookec123" target="_blank"><i class="fa fa-github"></i></a>
-                            <a href="https://www.linkedin.com/in/brooke-cronin-60626423b/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                        </div>
-                    </div>
+                <div class="timestamp">
+                    <button onclick="setVideoTime(21)">0:21</button>
+                    <p> - Start of a bug attack. You must click all of the bugs before they disappear and steal your
+                        coins/lives.</p>
                 </div>
             </div>
+            <div class="tools-used">
+                <h5>Tools Used</h5>
+                <li>
+                    Unreal Engine version 4.27.2
+                </li>
+                <li>
+                    C++
+                </li>
+                <li>
+                    Unreal Engine blueprints and widgets
+                </li>
+                <p></p>
+            </div>
+            <div class="learn-description">
+                <h5>What I Learned From This Project</h5>
+                <li>The basics of Unreal Engine</li>
+                <li>How to use Unreal Engine blueprints and C++ code in my project</li>
+                <li>How to animate my widgets in Unreal Engine</li>
+                <li>How to add sound effects</li>
+                <li>How to switch between different widgets</li>
+                <p></p>
+            </div>
         </div>
-        <!-- Footer End -->
-        
-        <!-- Back to top button -->
-        <a href="#" class="btn back-to-top"><i class="fa fa-chevron-up"></i></a>
-        
-        <!-- Pre Loader -->
-        <div id="loader" class="show">
-            <div class="loader"></div>
-        </div>
+    </div>
+    <!-- Portfolio End -->
 
-        <!-- JavaScript Libraries -->
-        <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
-        <script src="lib/easing/easing.min.js"></script>
-        <script src="lib/wow/wow.min.js"></script>
-        <script src="lib/waypoints/waypoints.min.js"></script>
-        <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
-        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-        <script src="lib/isotope/isotope.pkgd.min.js"></script>
-        <script src="lib/lightbox/js/lightbox.min.js"></script>
-        
-        <!-- Contact Javascript File -->
-        <script src="mail/jqBootstrapValidation.min.js"></script>
-        <script src="mail/contact.js"></script>
+    <!-- Footer Start -->
+    <div id="footer"></div>
+    <!-- Footer End -->
 
-        <!-- Main Javascript -->
-        <script src="js/portfolio-script.js"></script>
-    </body>
+    <!-- Back to top button -->
+    <a href="#" class="btn back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+    <!-- Pre Loader -->
+    <div id="loader" class="show">
+        <div class="loader"></div>
+    </div>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <!-- Contact Javascript File -->
+    <script src="mail/jqBootstrapValidation.min.js"></script>
+    <script src="mail/contact.js"></script>
+
+    <!-- Navbar Javascript -->
+    <script src="js/navbar.js"></script>
+
+    <!-- Contact Form Javascript -->
+    <script src="js/contact-form.js"></script>
+
+    <!-- Footer Javascript -->
+    <script src="js/footer.js"></script>
+
+    <!-- Main Javascript -->
+    <script src="js/portfolio-script.js"></script>
+</body>
+
 </html>

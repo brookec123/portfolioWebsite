@@ -34,10 +34,10 @@
     $(window).scroll(function () {
         if ($(this).scrollTop() > 0) {
             $('.navbar').addClass('nav-sticky');
-            $('.resume-btn').addClass('nav-sticky');
+            $('.cv-btn').addClass('nav-sticky');
         } else {
             $('.navbar').removeClass('nav-sticky');
-            $('.resume-btn').removeClass('nav-sticky');
+            $('.cv-btn').removeClass('nav-sticky');
         }
     });
 
@@ -58,13 +58,13 @@
         }
     });
 
-    var btn = document.querySelector(".resume-btn");
+    var btn = document.querySelector(".cv-btn");
 
     btn.addEventListener("mouseover", function () {
         this.textContent = "Download";
     })
     btn.addEventListener("mouseout", function () {
-        this.textContent = "Resume";
+        this.textContent = "CV";
     })
 
     // Typed Initiate
@@ -147,12 +147,30 @@
         });
     });
 
+    // Experience isotope and filter
+    var experienceIsotope = $('.timeline').isotope({
+        itemSelector: '.experience-container',
+        layoutMode: 'vertical',
+        getSortData: {
+            category: '[class]'
+        }
+    });
+
+    $('#experience-flters li').on('click', function () {
+        $("#experience-flters li").removeClass('active');
+        $(this).addClass('active');
+
+        var filterValue = $(this).attr('data-filter');
+        experienceIsotope.isotope({ filter: filterValue });
+    });
+
+
+
 
 })(jQuery);
 
 function openPDF() {
-    // Replace 'path/to/your.pdf' with the path to your PDF file on the desktop
-    const url = './Brooke-Cronin-resume.pdf';
+    const url = './Brooke-Cronin-cv.pdf';
     window.open(url, '_blank');
 }
 

@@ -32,24 +32,22 @@
             <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                 <span class="navbar-toggler-icon"></span>
             </button>
-
             <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a href="index.html#home" class="nav-link active">Home</a>
+                        <a href="#home" class="nav-link">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a href="index.html#about" class="nav-link">About</a>
+                        <a href="#about" class="nav-link">About</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a href="index.html#portfolio" class="nav-link dropdown-toggle"
+                        <a href="#portfolio" class="nav-link dropdown-toggle active"
                             data-toggle="dropdown">Portfolio</a>
                         <div class="dropdown-menu">
                             <a href="garden-clicker.html" class="dropdown-item">Garden Clicker</a>
                             <a href="turn-and-fortune.html" class="dropdown-item">Turn and Fortune</a>
                             <a href="residential-evaluation.html" class="dropdown-item">Residential Evaluation</a>
                             <a href="from-python-to-java.html" class="dropdown-item">From Python to Java</a>
-                            <a href="craft-it.html" class="dropdown-item">Craft It</a>
                             <a href="personal-portfolio.html" class="dropdown-item">Personal Portfolio</a>
                             <a href="auto-file-and-function-comments.html" class="dropdown-item">Auto File and Function
                                 Comments</a>
@@ -57,13 +55,10 @@
                             <a href="" class="dropdown-item"></a>
                         </div>
                     </li>
-                    <a href="index.html#experience" class="nav-item nav-link">Experience</a>
+                    <a href="#experience" class="nav-item nav-link">Experience</a>
                     </li>
                     <li class="nav-item">
-                        <a href="index.html#blog" class="nav-link">Blog</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="index.html#contact" class="nav-link">Contact</a>
+                        <a href="#contact" class="nav-link">Contact</a>
                     </li>
                     <li class="nav-item">
                         <button class="resume-btn" onclick="openPDF()">Resume</button>
@@ -73,7 +68,6 @@
         </div>
     </div>
     <!-- Nav Bar End -->
-
 
     <!-- Hero Start -->
     <div class="hero">
@@ -93,44 +87,67 @@
         <div class="container">
             <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
                 <p>My Portfolio</p>
-                <h2>From Python To Java</h2>
+                <h2>Open Command Folder</h2>
             </div>
             <div class="project-description">
                 <h5>Description</h5>
-                <p>From Python to Java is a Java-based project that simplifies the process of transitioning from Python
-                    to Java for developers.
-                    The project is designed with JavaFX and offers a Python syntax reference for users as they code in
-                    Java.
-                    This tool is created to assist users in adapting to Java syntax and help Python developers advance
-                    their skills smoothly.
-                    The project comes with a user-friendly interface, making it easy for anyone to navigate and use,
-                    regardless of their level of expertise.
-                    Whether you're a beginner or an experienced developer, From Python to Java is a valuable resource
-                    that will help you become proficient
-                    in both programming languages.</p>
+                <p>"Open Command Folder" is a Visual Studio Code Extension that opens a command prompt window from the
+                    folder that the currently opened file is in.</p>
             </div>
             <div class="images">
                 <h5>Screenshots</h5>
-                <p>Coming soon!</p>
+                <!-- Slider main container -->
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <!-- Images -->
+                        <div class="swiper-slide"><img src="img/gcTitle.png"></img></div>
+                        <div class="swiper-slide"><img src="img/gcInstr.png"></img></div>
+                        <div class="swiper-slide"><img src="img/gcPlay.png"></img></div>
+                        <div class="swiper-slide"><img src="img/gcGameDone.png"></img></div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+            <div class="video-container">
+                <video width="640" height="360" controls>
+                    <source src="vid/Garden Clicker Video Showcase.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="timestamp-description">
+                <h5>Video Timestamps</h5>
+                <p>0:03 - Instructions</p>
+                <p>0:08 - Start of Play through. Top right of screen shows how much coins you currently have.
+                    Top left of screen shows the number of lives you have left.
+                    Underneath on the left side is the upgrades.
+                    The name, current cost, and a progress bar showing how much you have purchased each upgrade is shown
+                    on each upgrade button.
+                    When hovering over the upgrade buttons, a description of what the upgrade does is shown.</p>
+                <p>0:21 - Start of a bug attack. You must click all of the bugs before they disappear and steal your
+                    coins/lives.</p>
             </div>
             <div class="tools-used">
                 <h5>Tools Used</h5>
                 <li>
-                    Java
+                    Unreal Engine version 4.27.2
                 </li>
                 <li>
-                    JavaFx
+                    C++
                 </li>
                 <li>
-                    Eclipse
+                    Unreal Engine blueprints and widgets
                 </li>
                 <p></p>
             </div>
             <div class="learn-description">
                 <h5>What I Learned From This Project</h5>
-                <li>How to make my own compiler for Java as Java has to compile all files at runtime, and can't compile
-                    one file in the middle of runtime.</li>
-                <li>The similarities and differences between programming in Python and Java.</li>
+                <li>The basics of Unreal Engine</li>
+                <li>How to use Unreal Engine blueprints and C++ code in my project</li>
+                <li>How to animate my widgets in Unreal Engine</li>
+                <li>How to add sound effects</li>
+                <li>How to switch between different widgets</li>
                 <p></p>
             </div>
         </div>
