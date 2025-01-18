@@ -1,0 +1,184 @@
+{
+    "skills": [
+        {
+            "name": "Java",
+            "type": "hard",
+            "icon": "fab fa-java"
+        },
+        {
+            "name": "Python",
+            "type": "hard",
+            "icon": "fab fa-python"
+        },
+        {
+            "name": "TCL",
+            "type": "hard",
+            "icon": "fas fa-terminal"
+        },
+        {
+            "name": "MatLab",
+            "type": "hard",
+            "icon": "fas fa-calculator"
+        },
+        {
+            "name": "C",
+            "type": "hard",
+            "icon": "img/c-logo.png"
+        },
+        {
+            "name": "C++",
+            "type": "hard",
+            "icon": "img/cpp-logo.png"
+        },
+        {
+            "name": "C#",
+            "type": "hard",
+            "icon": "https://img.icons8.com/ios-filled/100/null/c-sharp-logo.png"
+        },
+        {
+            "name": "VHDL",
+            "type": "hard",
+            "icon": "fas fa-microchip"
+        },
+        {
+            "name": "Assembly",
+            "type": "hard",
+            "icon": "fas fa-microchip"
+        },
+        {
+            "name": "Unreal Engine",
+            "type": "hard",
+            "icon": "https://img.icons8.com/ios-filled/100/000000/unreal-engine.png"
+        },
+        {
+            "name": "Godot",
+            "type": "hard",
+            "icon": "fas fa-gamepad"
+        },
+        {
+            "name": "HTML5",
+            "type": "hard",
+            "icon": "fab fa-html5"
+        },
+        {
+            "name": "CSS",
+            "type": "hard",
+            "icon": "fab fa-css3-alt"
+        },
+        {
+            "name": "JavaScript",
+            "type": "hard",
+            "icon": "fab fa-js"
+        },
+        {
+            "name": "MySQL",
+            "type": "hard",
+            "icon": "fas fa-database"
+        },
+        {
+            "name": "SQLAlchemy",
+            "type": "hard",
+            "icon": "fas fa-database"
+        },
+        {
+            "name": "Object Oriented Programming",
+            "type": "hard",
+            "icon": "fas fa-object-group"
+        },
+        {
+            "name": "Operating Systems",
+            "type": "hard",
+            "icon": "fas fa-server"
+        },
+        {
+            "name": "Organization",
+            "type": "soft",
+            "icon": "fas fa-tasks"
+        },
+        {
+            "name": "Leadership",
+            "type": "soft",
+            "icon": "fas fa-users"
+        },
+        {
+            "name": "Time Management",
+            "type": "soft",
+            "icon": "fas fa-clock"
+        },
+        {
+            "name": "Conflict Mediation",
+            "type": "soft",
+            "icon": "fas fa-handshake"
+        },
+        {
+            "name": "Problem-Solver",
+            "type": "soft",
+            "icon": "fas fa-puzzle-piece"
+        },
+        {
+            "name": "Interpersonal Skills",
+            "type": "soft",
+            "icon": "fas fa-users"
+        },
+        {
+            "name": "Effective Communicator",
+            "type": "soft",
+            "icon": "fas fa-comment-alt"
+        },
+        {
+            "name": "Teamwork",
+            "type": "soft",
+            "icon": "fas fa-users"
+        }
+    ],
+    "projects": [
+        {
+            "name": "Garden Clicker",
+            "type": "games",
+            "shortDescription": "",
+            "skills": [
+                "Unreal Engine"
+            ],
+            "mainImage": "img/gcTitle.png",
+            "html": "garden-clicker.html",
+            "sourceCode": null,
+            "tryIt": null
+        },
+        {
+            "name": "Turn and Fortune",
+            "type": "games",
+            "shortDescription": "",
+            "skills": [
+                "Unreal Engine"
+            ],
+            "mainImage": "img/tfTitle.png",
+            "html": "turn-and-fortune.html",
+            "sourceCode": null,
+            "tryIt": null
+        },
+        {
+            "name": "Residential Evaluation",
+            "type": "games",
+            "shortDescription": "",
+            "skills": [
+                "Unreal Engine"
+            ],
+            "mainImage": "img/residential-evaluation.png",
+            "html": "residential-evaluation.html",
+            "sourceCode": null,
+            "tryIt": "https://store.steampowered.com/app/2387840/Residential_Evaluation/"
+        },
+        {
+            "name": "Personal Portfolio",
+            "type": "websites",
+            "shortDescription": "",
+            "skills": [
+                "HTML5"
+            ],
+            "mainImage": "img/portfolio-homescreen.png",
+            "html": "personal-portfolio.html",
+            "sourceCode": "https://github.com/brookec123/portfolioWebsite",
+            "tryIt": "index.html"
+        }
+    ]
+}

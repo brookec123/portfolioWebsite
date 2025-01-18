@@ -399,12 +399,20 @@ a:focus {
 .skills-section {
     position: relative;
     width: 100%;
-    margin: 45px 0;
+    margin: 60px 0;
+    /* Increased margin for better spacing */
+    padding-bottom: 40px;
+    margin-bottom: 200px;
+    /* Ensure enough space below */
+    transition: margin 0.3s ease, padding 0.3s ease;
+    /* Smooth adjustments for dynamic changes */
 }
 
 .skills-section .section-header {
     padding-top: 20px;
     margin-bottom: 30px;
+    text-align: center;
+    /* Ensure header stays centered */
 }
 
 .skills-section .search-bar {
@@ -438,8 +446,10 @@ a:focus {
 
 .skills-container {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    /* Auto-adjust columns based on available space */
     gap: 30px;
+    /* Consistent spacing between items */
     justify-content: center;
     align-items: center;
 }
@@ -447,7 +457,10 @@ a:focus {
 .skill-container {
     position: relative;
     background-color: rgb(37, 46, 107);
-    width: 160px;
+    width: 100%;
+    /* Ensure flexible width within the grid */
+    max-width: 160px;
+    /* Constrain maximum size */
     height: 160px;
     display: flex;
     justify-content: center;
@@ -456,8 +469,8 @@ a:focus {
     text-align: center;
     color: #ffffff;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    margin: 20px;
-    /* Add spacing between boxes */
+    margin: auto;
+    /* Center items dynamically */
 }
 
 .skill-container i,
@@ -466,7 +479,7 @@ a:focus {
     margin-bottom: 10px;
     color: #ffffff;
     filter: brightness(0) invert(1);
-    /* For images */
+    /* Consistent coloring for icons/images */
 }
 
 .skill-container p {
@@ -475,19 +488,33 @@ a:focus {
     margin: 0;
 }
 
+/* Responsive adjustments */
 @media (max-width: 991.98px) {
+    .skills-section {
+        margin: 50px 0;
+        /* Reduce spacing for smaller screens */
+        padding-bottom: 30px;
+    }
+
     .skills-container {
-        grid-template-columns: repeat(2, 1fr);
-        /* Reduce columns for smaller screens */
+        gap: 20px;
+        /* Reduce gap for smaller screens */
     }
 }
 
 @media (max-width: 575.98px) {
+    .skills-section {
+        margin: 40px 0;
+        /* Further reduce spacing for very small screens */
+        padding-bottom: 20px;
+    }
+
     .skills-container {
         grid-template-columns: 1fr;
-        /* Stack items on small screens */
+        /* Stack items */
     }
 }
+
 
 /*******************************/
 /******** Portfolio CSS ********/

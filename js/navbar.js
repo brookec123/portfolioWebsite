@@ -36,12 +36,19 @@ $(".navbar-nav a").on('click', function (event) {
 
 var btn = document.querySelector(".cv-btn");
 
-btn.addEventListener("mouseover", function () {
-    this.textContent = "Download";
-})
-btn.addEventListener("mouseout", function () {
-    this.textContent = "CV";
-})
+var btn = document.querySelector(".cv-btn");
+
+if (btn) {
+    btn.addEventListener("mouseover", function () {
+        this.textContent = "Download";
+    });
+    btn.addEventListener("mouseout", function () {
+        this.textContent = "CV";
+    });
+} else {
+    console.warn("Button with class .cv-btn not found!");
+}
+
 
 function openPDF() {
     const url = './Brooke-Cronin-cv.pdf';

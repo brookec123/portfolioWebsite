@@ -12,7 +12,7 @@
     loader();
 
     // Initiate the wowjs
-    new WOW().init();
+    new WOW().init(); x
 
     // Back to top button
     $(window).scroll(function () {
@@ -124,29 +124,55 @@
         experienceIsotope.isotope({ filter: filterValue });
     });
 
+    document.addEventListener("DOMContentLoaded", () => {
+        // Fetch the JSON data
+        fetch("data.json") // Adjust the path if needed
+            .then((response) => {
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                return response.json();
+            })
+            .then((data) => {
+                populateSkills(data.skills);
+            })
+            .catch((error) => console.error("Error loading skills data:", error));
+    });
+
+    function populateSkills(skills) {
+        console.log("Populating skills...");
+        const skillsContainer = document.getElementById("skills-container");
+
+        if (!skillsContainer) {
+            console.error("Skills container not found!");
+            return;
+        }
+
+        let skillCount = 0; // Initialize a counter to track the number of skills added
+
+        skills.forEach((skill) => {
+            console.log("Adding skill:", skill.name);
+            const skillDiv = document.createElement("div");
+            skillDiv.className = `col-lg-3 col-md-6 skill-container ${skill.type}`;
+            skillDiv.style.marginBottom = "30px"; // Add space below each skill container
+            skillDiv.innerHTML = `
+            <div class="skill-item" style="padding: 10px;">
+                ${skill.icon.startsWith("fa") || skill.icon.startsWith("fab") || skill.icon.startsWith("fas")
+                    ? `<i class="${skill.icon}"></i>`
+                    : `<img src="${skill.icon}" alt="${skill.name} Logo">`
+                }
+                <p class="skill-name">${skill.name}</p>
+            </div>
+        `;
+            skillsContainer.appendChild(skillDiv);
+
+            skillCount++; // Increment the counter
+
+        });
+
+        skillsContainer.style.marginBottom = ((skillCount / 6) * 200).toString() + "px";
+    }
 
 
 
 })(jQuery);
-
-var slideIndex = 1;
-showSlides(slideIndex);
-
-function plusSlides(n) {
-    showSlides(slideIndex += n);
-}
-
-function showSlides(n) {
-    var i;
-    var slides = document.getElementsByClassName("mySlides");
-    if (n > slides.length) {
-        slideIndex = 1;
-    }
-    if (n < 1) {
-        slideIndex = slides.length;
-    }
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-    }
-    slides[slideIndex - 1].style.display = "block";
-}
