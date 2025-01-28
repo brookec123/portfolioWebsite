@@ -1,6 +1,6 @@
 # My Portfolio Website
 
-This is my personal portfolio website, where I showcase my work and share information about myself. The website is built using HTML, CSS, and JavaScript, and is hosted using GitHub Pages.
+This is my personal portfolio website, where I showcase my work and share information about myself. The website is built using HTML, CSS, and JavaScript, and is hosted using Hostinger.
 
 ## Table of Contents
 
@@ -12,7 +12,6 @@ This is my personal portfolio website, where I showcase my work and share inform
 - [Usage](#usage)
 - [Contributing](#contributing)
 - [Contact](#contact)
-
 
 ## About
 
