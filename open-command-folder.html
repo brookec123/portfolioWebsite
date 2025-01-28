@@ -1,123 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="utf-8">
+  <head>
+    <meta charset="utf-8" />
     <title>Brooke Cronin</title>
 
     <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- CSS Libraries -->
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-    <link href="lib/animate/animate.min.css" rel="stylesheet">
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+    <link href="lib/animate/animate.min.css" rel="stylesheet" />
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet" />
+
+    <script>
+      var currentPage = "portfolio";
+    </script>
 
     <!-- Navbar Stylesheet -->
-    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/navbar.css" />
 
     <!-- Footer Stylesheet -->
-    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/footer.css" />
 
     <!-- CSS Stylesheet -->
-    <link rel="stylesheet" href="css/portfolio.css">
+    <link rel="stylesheet" href="css/portfolio.css" />
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
-</head>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+  </head>
 
-<body data-spy="scroll" data-target=".navbar" data-offset="51">
+  <body data-spy="scroll" data-target=".navbar" data-offset="51">
     <!-- Nav Bar Start -->
     <div id="navbar"></div>
     <!-- Nav Bar End -->
 
-
     <!-- Hero Start -->
     <div class="hero">
-        <div class="container-fluid">
-            <div class="row align-items-center">
-                <div class="col-sm-12 col-md-6">
-                    <div class="hero-content">
-                    </div>
-                </div>
-            </div>
+      <div class="container-fluid">
+        <div class="row align-items-center">
+          <div class="col-sm-12 col-md-6">
+            <div class="hero-content"></div>
+          </div>
         </div>
+      </div>
     </div>
     <!-- Hero End -->
 
     <!-- Portfolio Start -->
     <div class="portfolio">
-        <div class="container">
-            <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
-                <p>My Portfolio</p>
-                <h2>Open Command Folder</h2>
-            </div>
-
-            <!-- <div class="project-tags">
+      <div class="container">
+        <div
+          class="section-header text-center wow zoomIn"
+          data-wow-delay="0.1s"
+        >
+          <p>My Portfolio</p>
+          <h2>Open Command Folder</h2>
+        </div>
+        <!-- <div class="project-tags">
             </div> -->
 
-            <div class="project-description">
-                <h5>Description</h5>
-                <p>"Open Command Folder" is a Visual Studio Code Extension that opens a command prompt window from the
-                folder that the currently opened file is in.</p>
-            </div>
-            <div class="images">
-                <h5>Video and Screenshots</h5>
-                <!-- Slider main container -->
-                <div class="swiper">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide"><video id="video" width="640" height="360" controls>
-                                <source src="vid/Garden Clicker Video Showcase.mp4" type="video/mp4">
-                                Your browser does not support the video tag.
-                            </video></div>
-                        <!-- Images -->
-                        <div class="swiper-slide"><img src="img/gcTitle.png"></div>
-                        <div class="swiper-slide"><img src="img/gcInstr.png"></div>
-                        <div class="swiper-slide"><img src="img/gcPlay.png"></div>
-                        <div class="swiper-slide"><img src="img/gcGameDone.png"></div>
-                    </div>
-                    <div class="swiper-pagination"></div>
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-button-next"></div>
-                </div>
-            </div>
-            <div class="timestamp-description">
-                <h5>Video Timestamps</h5>
-                <div class="timestamp">
-                    <button onclick="setVideoTime(3)">0:03</button>
-                    <p> - Instructions</p>
-                </div>
-                <div class="timestamp">
-                    <button onclick="setVideoTime(8)">0:08</button>
-                    <p> - Start of play through. Top right of screen shows how much coins you currently have.
-                        Top left of screen shows the number of lives you have left.
-                        Underneath on the left side is the upgrades.
-                        The name, current cost, and a progress bar showing how much you have purchased each upgrade is
-                        shown
-                        on each upgrade button.
-                        When hovering over the upgrade buttons, a description of what the upgrade does is shown.</p>
-                </div>
-                <div class="timestamp">
-                    <button onclick="setVideoTime(21)">0:21</button>
-                    <p> - Start of a bug attack. You must click all of the bugs before they disappear and steal your
-                        coins/lives.</p>
-                </div>
-            </div>
-            
-            <div class="learn-description">
-                <h5>What I Learned From This Project</h5>
-                <li>The basics of Unreal Engine</li>
-                <li>How to use Unreal Engine blueprints and C++ code in my project</li>
-                <li>How to animate my widgets in Unreal Engine</li>
-                <li>How to add sound effects</li>
-                <li>How to switch between different widgets</li>
-                <p></p>
-            </div>
+        <div class="project-description">
+          <h5>Description</h5>
+          <p>
+            "Open Command Folder" is a Visual Studio Code Extension that opens a
+            command prompt window from the folder that the currently opened file
+            is in.
+          </p>
         </div>
+        <div class="images">
+          <h5>Video and Screenshots</h5>
+          <!-- TODO: add images and add video/timestamps -->
+          <p>Coming Soon!</p>
+          <p></p>
+        </div>
+        <div class="reasoning">
+          <h5>Why I Did This Project</h5>
+          <p>
+            I made "Open Command Folder" because when I would try to build and
+            run C++ (with make files) projects in VSCode, I would need to use it
+            in a command prompt (not the integrated window in VSCode) and I
+            would always have to open the command prompt at the root directory,
+            then use a "cd" command to go to the correct folder. But now with
+            this extension, I can automate that repetitive task and just simply
+            go to the correct directory for the opened file.
+          </p>
+          <p></p>
+        </div>
+        <div class="learn-description">
+          <h5>What I Learned From This Project</h5>
+          <li>How to set up and make a VSCode extension</li>
+          <li>
+            How to open a command prompt and run commands in the window with a
+            keyboard shortcut
+          </li>
+          <li>
+            How to allow the user to customize the keyboard shortcut in their
+            user and workspace settings
+          </li>
+          <li>
+            How to make it compatible with Windows, Mac, and Linux systems
+          </li>
+          <p></p>
+        </div>
+      </div>
     </div>
     <!-- Portfolio End -->
 
@@ -130,7 +136,7 @@
 
     <!-- Pre Loader -->
     <div id="loader" class="show">
-        <div class="loader"></div>
+      <div class="loader"></div>
     </div>
 
     <!-- JavaScript Libraries -->
@@ -157,6 +163,5 @@
 
     <!-- Main Javascript -->
     <script src="js/portfolio-script.js"></script>
-</body>
-
+  </body>
 </html>

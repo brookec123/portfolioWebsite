@@ -1,149 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="utf-8">
+  <head>
+    <meta charset="utf-8" />
     <title>Brooke Cronin</title>
 
     <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- CSS Libraries -->
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-    <link href="lib/animate/animate.min.css" rel="stylesheet">
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+    <link href="lib/animate/animate.min.css" rel="stylesheet" />
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet" />
+
+    <script>
+      var currentPage = "portfolio";
+    </script>
+
+    <!-- Navbar Stylesheet -->
+    <link rel="stylesheet" href="css/navbar.css" />
+
+    <!-- Footer Stylesheet -->
+    <link rel="stylesheet" href="css/footer.css" />
 
     <!-- CSS Stylesheet -->
-    <link rel="stylesheet" href="css/portfolio.css">
+    <link rel="stylesheet" href="css/portfolio.css" />
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
-</head>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+  </head>
 
-<body data-spy="scroll" data-target=".navbar" data-offset="51">
+  <body data-spy="scroll" data-target=".navbar" data-offset="51">
     <!-- Nav Bar Start -->
-    <div class="navbar navbar-expand-lg bg-light navbar-light">
-        <div class="container-fluid">
-            <a href="index.html" class="navbar-brand">Brooke Cronin</a>
-            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a href="#home" class="nav-link">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#about" class="nav-link">About</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a href="#portfolio" class="nav-link dropdown-toggle active"
-                            data-toggle="dropdown">Portfolio</a>
-                        <div class="dropdown-menu">
-                            <a href="garden-clicker.html" class="dropdown-item">Garden Clicker</a>
-                            <a href="turn-and-fortune.html" class="dropdown-item">Turn and Fortune</a>
-                            <a href="residential-evaluation.html" class="dropdown-item">Residential Evaluation</a>
-                            <a href="from-python-to-java.html" class="dropdown-item">From Python to Java</a>
-                            <a href="personal-portfolio.html" class="dropdown-item">Personal Portfolio</a>
-                            <a href="auto-file-and-function-comments.html" class="dropdown-item">Auto File and Function
-                                Comments</a>
-                            <a href="open-command-folder.html" class="dropdown-item">Open Command Folder</a>
-                            <a href="" class="dropdown-item"></a>
-                        </div>
-                    </li>
-                    <a href="#experience" class="nav-item nav-link">Experience</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#contact" class="nav-link">Contact</a>
-                    </li>
-                    <li class="nav-item">
-                        <button class="resume-btn" onclick="openPDF()">Resume</button>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
+    <div id="navbar"></div>
     <!-- Nav Bar End -->
-
 
     <!-- Hero Start -->
     <div class="hero">
-        <div class="container-fluid">
-            <div class="row align-items-center">
-                <div class="col-sm-12 col-md-6">
-                    <div class="hero-content">
-                    </div>
-                </div>
-            </div>
+      <div class="container-fluid">
+        <div class="row align-items-center">
+          <div class="col-sm-12 col-md-6">
+            <div class="hero-content"></div>
+          </div>
         </div>
+      </div>
     </div>
     <!-- Hero End -->
 
     <!-- Portfolio Start -->
     <div class="portfolio">
-        <div class="container">
-            <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
-                <p>My Portfolio</p>
-                <h2>Personal Portfolio</h2>
-            </div>
-            <div class="project-description">
-                <h5>Description</h5>
-                <p>This is the website that you are currently viewing. I created this portfolio website to showcase
-                    my projects, and to inform people more about me.</p>
-            </div>
-            <div class="images">
-                <h5>Screenshots</h5>
-                <p>Coming soon!</p>
-            </div>
-            <div class="tools-used">
-                <h5>Tools Used</h5>
-                <li>
-                    HTML5
-                </li>
-                <li>
-                    CSS3
-                </li>
-                <li>
-                    JavaScript
-                </li>
-                <li>
-                    jQuery
-                </li>
-                <p></p>
-            </div>
-            <div class="learn-description">
-                <h5>What I Learned From This Project</h5>
-                <li>How to make a working slideshow</li>
-                <li>How to embed videos and have linked timestamps to highlight important parts of the videos</li>
-                <p></p>
-            </div>
+      <div class="container">
+        <div
+          class="section-header text-center wow zoomIn"
+          data-wow-delay="0.1s"
+        >
+          <p>My Portfolio</p>
+          <h2>Personal Portfolio</h2>
         </div>
+        <!-- <div class="project-tags">
+            </div> -->
+
+        <div class="project-description">
+          <h5>Description</h5>
+          <p>This is the website that you are currently viewing.</p>
+        </div>
+        <div class="images">
+          <h5>Video and Screenshots</h5>
+          <!-- TODO: add images and add video/timestamps -->
+          <p>Coming Soon!</p>
+          <p></p>
+        </div>
+        <div class="reasoning">
+          <h5>Why I Did This Project</h5>
+          <p>
+            I made my portfolio website because I had just recently learned the
+            basics of web development, and I also wanted a website to showcase
+            all of my other projects and experience, so I decided to make this
+            website.
+          </p>
+          <p></p>
+        </div>
+        <div class="learn-description">
+          <h5>What I Learned From This Project</h5>
+          <li>How to create a website from nothing</li>
+          <li>How to make wireframes</li>
+          <li>How to host a website with Hostinger</li>
+          <li>How to create a working Contact Me form</li>
+          <li>How to make a responsive website for different screen sizes</li>
+          <li>How to animate and add transitions to a website</li>
+          <li>How to search and filter items</li>
+          <li>How to download a file on a button click</li>
+          <li>How to open up other websites on a button/icon click</li>
+          <p></p>
+        </div>
+      </div>
     </div>
     <!-- Portfolio End -->
 
     <!-- Footer Start -->
-    <div class="footer wow fadeIn" data-wow-delay="0.3s">
-        <div class="container-fluid">
-            <div class="container">
-                <div class="footer-info">
-                    <h2>Brooke Cronin</h2>
-                    <div class="footer-menu">
-                        <p>brookecronin123@gmail.com</p>
-                    </div>
-                    <div class="footer-social">
-                        <a href="https://brookec25.itch.io" target="_blank"><i class="fab fa-itch-io"></i></a>
-                        <a href="https://github.com/brookec123" target="_blank"><i class="fa fa-github"></i></a>
-                        <a href="https://www.linkedin.com/in/brooke-cronin-60626423b/" target="_blank"><i
-                                class="fab fa-linkedin-in"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    <div id="footer"></div>
     <!-- Footer End -->
 
     <!-- Back to top button -->
@@ -151,7 +126,7 @@
 
     <!-- Pre Loader -->
     <div id="loader" class="show">
-        <div class="loader"></div>
+      <div class="loader"></div>
     </div>
 
     <!-- JavaScript Libraries -->
@@ -170,8 +145,13 @@
     <script src="mail/jqBootstrapValidation.min.js"></script>
     <script src="mail/contact.js"></script>
 
+    <!-- Navbar Javascript -->
+    <script src="js/navbar.js"></script>
+
+    <!-- Footer Javascript -->
+    <script src="js/footer.js"></script>
+
     <!-- Main Javascript -->
     <script src="js/portfolio-script.js"></script>
-</body>
-
+  </body>
 </html>

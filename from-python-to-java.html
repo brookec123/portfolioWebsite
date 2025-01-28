@@ -1,161 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="utf-8">
+  <head>
+    <meta charset="utf-8" />
     <title>Brooke Cronin</title>
 
     <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- CSS Libraries -->
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-    <link href="lib/animate/animate.min.css" rel="stylesheet">
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+    <link href="lib/animate/animate.min.css" rel="stylesheet" />
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet" />
+
+    <script>
+      var currentPage = "portfolio";
+    </script>
+
+    <!-- Navbar Stylesheet -->
+    <link rel="stylesheet" href="css/navbar.css" />
+
+    <!-- Footer Stylesheet -->
+    <link rel="stylesheet" href="css/footer.css" />
 
     <!-- CSS Stylesheet -->
-    <link rel="stylesheet" href="css/portfolio.css">
+    <link rel="stylesheet" href="css/portfolio.css" />
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
-</head>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+  </head>
 
-<body data-spy="scroll" data-target=".navbar" data-offset="51">
+  <body data-spy="scroll" data-target=".navbar" data-offset="51">
     <!-- Nav Bar Start -->
-    <div class="navbar navbar-expand-lg bg-light navbar-light">
-        <div class="container-fluid">
-            <a href="index.html" class="navbar-brand">Brooke Cronin</a>
-            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a href="index.html#home" class="nav-link active">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="index.html#about" class="nav-link">About</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a href="index.html#portfolio" class="nav-link dropdown-toggle"
-                            data-toggle="dropdown">Portfolio</a>
-                        <div class="dropdown-menu">
-                            <a href="garden-clicker.html" class="dropdown-item">Garden Clicker</a>
-                            <a href="turn-and-fortune.html" class="dropdown-item">Turn and Fortune</a>
-                            <a href="residential-evaluation.html" class="dropdown-item">Residential Evaluation</a>
-                            <a href="from-python-to-java.html" class="dropdown-item">From Python to Java</a>
-                            <a href="craft-it.html" class="dropdown-item">Craft It</a>
-                            <a href="personal-portfolio.html" class="dropdown-item">Personal Portfolio</a>
-                            <a href="auto-file-and-function-comments.html" class="dropdown-item">Auto File and Function
-                                Comments</a>
-                            <a href="open-command-folder.html" class="dropdown-item">Open Command Folder</a>
-                            <a href="" class="dropdown-item"></a>
-                        </div>
-                    </li>
-                    <a href="index.html#experience" class="nav-item nav-link">Experience</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="index.html#blog" class="nav-link">Blog</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="index.html#contact" class="nav-link">Contact</a>
-                    </li>
-                    <li class="nav-item">
-                        <button class="resume-btn" onclick="openPDF()">Resume</button>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
+    <div id="navbar"></div>
     <!-- Nav Bar End -->
-
 
     <!-- Hero Start -->
     <div class="hero">
-        <div class="container-fluid">
-            <div class="row align-items-center">
-                <div class="col-sm-12 col-md-6">
-                    <div class="hero-content">
-                    </div>
-                </div>
-            </div>
+      <div class="container-fluid">
+        <div class="row align-items-center">
+          <div class="col-sm-12 col-md-6">
+            <div class="hero-content"></div>
+          </div>
         </div>
+      </div>
     </div>
     <!-- Hero End -->
 
     <!-- Portfolio Start -->
     <div class="portfolio">
-        <div class="container">
-            <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
-                <p>My Portfolio</p>
-                <h2>From Python To Java</h2>
-            </div>
-            <div class="project-description">
-                <h5>Description</h5>
-                <p>From Python to Java is a Java-based project that simplifies the process of transitioning from Python
-                    to Java for developers.
-                    The project is designed with JavaFX and offers a Python syntax reference for users as they code in
-                    Java.
-                    This tool is created to assist users in adapting to Java syntax and help Python developers advance
-                    their skills smoothly.
-                    The project comes with a user-friendly interface, making it easy for anyone to navigate and use,
-                    regardless of their level of expertise.
-                    Whether you're a beginner or an experienced developer, From Python to Java is a valuable resource
-                    that will help you become proficient
-                    in both programming languages.</p>
-            </div>
-            <div class="images">
-                <h5>Screenshots</h5>
-                <p>Coming soon!</p>
-            </div>
-            <div class="tools-used">
-                <h5>Tools Used</h5>
-                <li>
-                    Java
-                </li>
-                <li>
-                    JavaFx
-                </li>
-                <li>
-                    Eclipse
-                </li>
-                <p></p>
-            </div>
-            <div class="learn-description">
-                <h5>What I Learned From This Project</h5>
-                <li>How to make my own compiler for Java as Java has to compile all files at runtime, and can't compile
-                    one file in the middle of runtime.</li>
-                <li>The similarities and differences between programming in Python and Java.</li>
-                <p></p>
-            </div>
+      <div class="container">
+        <div
+          class="section-header text-center wow zoomIn"
+          data-wow-delay="0.1s"
+        >
+          <p>My Portfolio</p>
+          <h2>From Python To Java</h2>
         </div>
+        <!-- <div class="project-tags">
+            </div> -->
+
+        <div class="project-description">
+          <h5>Description</h5>
+          <p>
+            From Python to Java is a Java-based project that simplifies the
+            process of transitioning from Python to Java for developers. The
+            project is designed with JavaFX and offers a Python syntax reference
+            for users as they code in Java. This tool is created to assist users
+            in adapting to Java syntax and help Python developers advance their
+            skills smoothly. The project comes with a user-friendly interface,
+            making it easy for anyone to navigate and use, regardless of their
+            level of expertise. Whether you're a beginner or an experienced
+            developer, From Python to Java is a valuable resource that will help
+            you become proficient in both programming languages.
+          </p>
+        </div>
+        <div class="images">
+          <h5>Video and Screenshots</h5>
+          <!-- TODO: add images and add video/timestamps -->
+          <p>Coming Soon!</p>
+          <p></p>
+        </div>
+        <div class="reasoning">
+          <h5>Why I Did This Project</h5>
+          <p>
+            In my Grade 12 Computer Science course, for the term project, I was
+            assigned to make an application with GUI and challenged to not do a
+            game. Since the prerequisite for this course was that you had to
+            have completed the Grade 11 course in Ontario, and different schools
+            did other languages (primarily python), I decided to try to make
+            this project in hopes that after the user (who did the Grade 11
+            course in python) was done with my application, they would be at a
+            good spot to do the Grade 12 course in Java.
+          </p>
+          <p></p>
+        </div>
+        <div class="learn-description">
+          <h5>What I Learned From This Project</h5>
+          <li>How to create a GUI with JavaFX</li>
+          <li>
+            How to switch between different scenes and have multiple windows
+            opened
+          </li>
+          <li>How to make a modular program</li>
+          <li>
+            How to make a simple Java compiler as Java compiles at run-time
+          </li>
+          <li>How to write to different types of files</li>
+          <li>How to use OOP</li>
+          <p></p>
+        </div>
+      </div>
     </div>
     <!-- Portfolio End -->
 
     <!-- Footer Start -->
-    <div class="footer wow fadeIn" data-wow-delay="0.3s">
-        <div class="container-fluid">
-            <div class="container">
-                <div class="footer-info">
-                    <h2>Brooke Cronin</h2>
-                    <div class="footer-menu">
-                        <p>brookecronin123@gmail.com</p>
-                    </div>
-                    <div class="footer-social">
-                        <a href="https://brookec25.itch.io" target="_blank"><i class="fab fa-itch-io"></i></a>
-                        <a href="https://github.com/brookec123" target="_blank"><i class="fa fa-github"></i></a>
-                        <a href="https://www.linkedin.com/in/brooke-cronin-60626423b/" target="_blank"><i
-                                class="fab fa-linkedin-in"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    <div id="footer"></div>
     <!-- Footer End -->
 
     <!-- Back to top button -->
@@ -163,7 +143,7 @@
 
     <!-- Pre Loader -->
     <div id="loader" class="show">
-        <div class="loader"></div>
+      <div class="loader"></div>
     </div>
 
     <!-- JavaScript Libraries -->
@@ -182,8 +162,13 @@
     <script src="mail/jqBootstrapValidation.min.js"></script>
     <script src="mail/contact.js"></script>
 
+    <!-- Navbar Javascript -->
+    <script src="js/navbar.js"></script>
+
+    <!-- Footer Javascript -->
+    <script src="js/footer.js"></script>
+
     <!-- Main Javascript -->
     <script src="js/portfolio-script.js"></script>
-</body>
-
+  </body>
 </html>

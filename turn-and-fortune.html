@@ -1,200 +1,218 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="utf-8">
+  <head>
+    <meta charset="utf-8" />
     <title>Brooke Cronin</title>
 
     <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- CSS Libraries -->
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-    <link href="lib/animate/animate.min.css" rel="stylesheet">
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+    <link href="lib/animate/animate.min.css" rel="stylesheet" />
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet" />
+
+    <script>
+      var currentPage = "portfolio";
+    </script>
+
+    <!-- Navbar Stylesheet -->
+    <link rel="stylesheet" href="css/navbar.css" />
+
+    <!-- Footer Stylesheet -->
+    <link rel="stylesheet" href="css/footer.css" />
 
     <!-- CSS Stylesheet -->
-    <link rel="stylesheet" href="css/portfolio.css">
+    <link rel="stylesheet" href="css/portfolio.css" />
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
-</head>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+  </head>
 
-<body data-spy="scroll" data-target=".navbar" data-offset="51">
+  <body data-spy="scroll" data-target=".navbar" data-offset="51">
     <!-- Nav Bar Start -->
-    <div class="navbar navbar-expand-lg bg-light navbar-light">
-        <div class="container-fluid">
-            <a href="index.html" class="navbar-brand">Brooke Cronin</a>
-            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a href="#home" class="nav-link">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#about" class="nav-link">About</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a href="#portfolio" class="nav-link dropdown-toggle active"
-                            data-toggle="dropdown">Portfolio</a>
-                        <div class="dropdown-menu">
-                            <a href="garden-clicker.html" class="dropdown-item">Garden Clicker</a>
-                            <a href="turn-and-fortune.html" class="dropdown-item">Turn and Fortune</a>
-                            <a href="residential-evaluation.html" class="dropdown-item">Residential Evaluation</a>
-                            <a href="from-python-to-java.html" class="dropdown-item">From Python to Java</a>
-                            <a href="personal-portfolio.html" class="dropdown-item">Personal Portfolio</a>
-                            <a href="" class="dropdown-item"></a>
-                        </div>
-                    </li>
-                    <a href="#experience" class="nav-item nav-link">Experience</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#contact" class="nav-link">Contact</a>
-                    </li>
-                    <li class="nav-item">
-                        <button class="resume-btn" onclick="openPDF()">Resume</button>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
+    <div id="navbar"></div>
     <!-- Nav Bar End -->
 
     <!-- Hero Start -->
     <div class="hero">
-        <div class="container-fluid">
-            <div class="row align-items-center">
-                <div class="col-sm-12 col-md-6">
-                    <div class="hero-content">
-                    </div>
-                </div>
-            </div>
+      <div class="container-fluid">
+        <div class="row align-items-center">
+          <div class="col-sm-12 col-md-6">
+            <div class="hero-content"></div>
+          </div>
         </div>
+      </div>
     </div>
     <!-- Hero End -->
 
     <!-- Portfolio Start -->
     <div class="portfolio">
-        <div class="container">
-            <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
-                <p>My Portfolio</p>
-                <h2>Turn and Fortune</h2>
-            </div>
-            <div class="project-description">
-                <h5>Description</h5>
-                <p>"Turn and Fortune" is a thrilling card game that puts you in the shoes of a fisherman who wants to be
-                    the best in the business.
-                    As you dive into the world of card games, you soon realize that you have 10 turns to make your mark
-                    and amass the most gold and fish.
-                    The game is simple - choose three of the nine cards available, and then pick one option from each
-                    card to gain or lose gold and fish.
-                    But beware! Every turn ends with a special trade offer that could make or break your fortune.
-                    The game is built using Unreal Engine, with a focus on using simple shapes and vibrant colors to
-                    make the gameplay more engaging.
-                    Dive into this world and see if you have what it takes to be the ultimate fisherman and card game
-                    master.</p>
-            </div>
-            <div class="images">
-                <h5>Screenshots</h5>
-                <!-- Slider main container -->
-                <div class="swiper">
-                    <div class="swiper-wrapper">
-                        <!-- Images -->
-                        <div class="swiper-slide"><img src="img/tfTitle.png"></img></div>
-                        <div class="swiper-slide"><img src="img/tfStory.png"></img></div>
-                        <div class="swiper-slide"><img src="img/tfPlay1.png"></img></div>
-                        <div class="swiper-slide"><img src="img/tfPlay2.png"></img></div>
-                        <div class="swiper-slide"><img src="img/tfPlay3.png"></img></div>
-                    </div>
-                    <div class="swiper-pagination"></div>
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-button-next"></div>
-                </div>
-            </div>
-            <div class="video-container">
-                <video width="640" height="360" controls>
-                    <source src="vid/TurnAndFortuneShowcase.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-            </div>
-            <div class="timestamp-description">
-                <h5>Video Timestamps</h5>
-                <p>0:00 - Portion of introduction dialogue/scene.</p>
-                <p>0:38 - Start of tutorial/gameplay.
-                    Top left shows the player's information like their name, the amount of gold they currently have,
-                    the amount of gold they currently get for each turn, the amount of fish they currently have,
-                    and the amount of fish they currently get for each turn. In the top/center of the screen, it shows
-                    what turn
-                    number you are on and how many card flips you have left for the current turn. On the top right,
-                    there is a button
-                    that allows you to open you inventory.</p>
-                <p>1:03 - Shows the values of the card that you have chosen and allows you to chose one of the two
-                    options listed
-                    on the card.</p>
-                <p>1:21 - Shows the special event and allows you to accept or decline the shown event. For some of the
-                    events,
-                    your decision can also affect the game in the future, so be careful!</p>
-                <p>1:25 - Shows the turn summary of the turn that you just finished. This summary includes the turn
-                    number,
-                    how much gold, gold per turn, fish, and fish per turn that you gained or lost during that turn,
-                    and what items you recieved.</p>
-                <p>1:35 - shows your current inventory. By hovering over each item, you can see the name of the item,
-                    and in the bottom left corner of each item, you can see how much you have of that item.</p>
-                <p>2:37 - Shows the game over screen, the stats that you finished the game with,
-                    and a button that allows you to play the game again.</p>
-            </div>
-            <div class="tools-used">
-                <h5>Tools Used</h5>
-                <li>
-                    Unreal Engine version 4.27.2
-                </li>
-                <li>
-                    C++
-                </li>
-                <li>
-                    Unreal Engine blueprints and widgets
-                </li>
-                <p></p>
-            </div>
-            <div class="learn-description">
-                <h5>What I Learned From This Project</h5>
-                <li>How to utilize the game instance in Unreal Engine to store variables that can be used across
-                    different widgets</li>
-                <li>How to add music playing in the background (without stopping between changing widgets)</li>
-                <li>How to make a fully working inventory system (where you can "collect" and "use" the items)</li>
-                <li>How to use structures in Unreal Engine to be able to store the card values and special event
-                    information easier</li>
-                <p></p>
-            </div>
+      <div class="container">
+        <div
+          class="section-header text-center wow zoomIn"
+          data-wow-delay="0.1s"
+        >
+          <p>My Portfolio</p>
+          <h2>Turn and Fortune</h2>
         </div>
+        <!-- <div class="project-tags">
+            </div> -->
+
+        <div class="project-description">
+          <h5>Description</h5>
+          <p>
+            "Turn and Fortune" is a thrilling card game that puts you in the
+            shoes of a fisherman who wants to be the best in the business. As
+            you dive into the world of card games, you soon realize that you
+            have 10 turns to make your mark and amass the most gold and fish.
+            The game is simple - choose three of the nine cards available, and
+            then pick one option from each card to gain or lose gold and fish.
+            But beware! Every turn ends with a special trade offer that could
+            make or break your fortune. The game is built using Unreal Engine,
+            with a focus on using simple shapes and vibrant colors to make the
+            gameplay more engaging. Dive into this world and see if you have
+            what it takes to be the ultimate fisherman and card game master.
+          </p>
+        </div>
+        <div class="images">
+          <h5>Video and Screenshots</h5>
+          <!-- Slider main container -->
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <video id="video" width="640" height="360" controls>
+                  <source
+                    src="vid/TurnAndFortuneShowcase.mp4"
+                    type="video/mp4"
+                  />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+              <!-- Images -->
+              <div class="swiper-slide"><img src="img/tfTitle.png" /></div>
+              <div class="swiper-slide"><img src="img/tfStory.png" /></div>
+              <div class="swiper-slide"><img src="img/tfPlay1.png" /></div>
+              <div class="swiper-slide"><img src="img/tfPlay2.png" /></div>
+              <div class="swiper-slide"><img src="img/tfPlay3.png" /></div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+          <p></p>
+        </div>
+        <div class="timestamp-description">
+          <h5>Video Timestamps</h5>
+          <div class="timestamp">
+            <button onclick="setVideoTime(0)">0:00</button>
+            <p>- Portion of introduction dialogue/scene.</p>
+          </div>
+          <div class="timestamp">
+            <button onclick="setVideoTime(38)">0:38</button>
+            <p>
+              - Start of tutorial/gameplay. Top left shows the player's
+              information like their name, the amount of gold they currently
+              have, the amount of gold they currently get for each turn, the
+              amount of fish they currently have, and the amount of fish they
+              currently get for each turn. In the top/center of the screen, it
+              shows what turn number you are on and how many card flips you have
+              left for the current turn. On the top right, there is a button
+              that allows you to open you inventory.
+            </p>
+          </div>
+          <div class="timestamp">
+            <button onclick="setVideoTime(63)">1:03</button>
+            <p>
+              - Shows the values of the card that you have chosen and allows you
+              to chose one of the two options listed on the card.
+            </p>
+          </div>
+          <div class="timestamp">
+            <button onclick="setVideoTime(81)">1:21</button>
+            <p>
+              - Shows the special event and allows you to accept or decline the
+              shown event. For some of the events, your decision can also affect
+              the game in the future, so be careful!
+            </p>
+          </div>
+          <div class="timestamp">
+            <button onclick="setVideoTime(85)">1:25</button>
+            <p>
+              - Shows the turn summary of the turn that you just finished. This
+              summary includes the turn number, how much gold, gold per turn,
+              fish, and fish per turn that you gained or lost during that turn,
+              and what items you recieved.
+            </p>
+          </div>
+          <div class="timestamp">
+            <button onclick="setVideoTime(95)">1:35</button>
+            <p>
+              - Shows your current inventory. By hovering over each item, you
+              can see the name of the item, and in the bottom left corner of
+              each item, you can see how much you have of that item.
+            </p>
+          </div>
+          <div class="timestamp">
+            <button onclick="setVideoTime(157)">2:37</button>
+            <p>
+              - Shows the game over screen, the stats that you finished the game
+              with, and a button that allows you to play the game again.
+            </p>
+          </div>
+        </div>
+        <div class="reasoning">
+          <h5>Why I Did This Project</h5>
+          <p>I made "Turn and Fortune" for a client on fiverr.</p>
+          <p></p>
+        </div>
+        <div class="learn-description">
+          <h5>What I Learned From This Project</h5>
+          <li>
+            How to utilize the game instance in Unreal Engine to store variables
+            that can be used across different widgets
+          </li>
+          <li>
+            How to add music playing in the background (without stopping between
+            changing widgets)
+          </li>
+          <li>
+            How to make a fully working inventory system (where you can
+            "collect" and "use" the items)
+          </li>
+          <li>
+            How to use structures in Unreal Engine to be able to store the card
+            values and special event information easier
+          </li>
+          <p></p>
+        </div>
+      </div>
     </div>
     <!-- Portfolio End -->
 
     <!-- Footer Start -->
-    <div class="footer wow fadeIn" data-wow-delay="0.3s">
-        <div class="container-fluid">
-            <div class="container">
-                <div class="footer-info">
-                    <h2>Brooke Cronin</h2>
-                    <div class="footer-menu">
-                        <p>brookecronin123@gmail.com</p>
-                    </div>
-                    <div class="footer-social">
-                        <a href="https://brookec25.itch.io" target="_blank"><i class="fab fa-itch-io"></i></a>
-                        <a href="https://github.com/brookec123" target="_blank"><i class="fa fa-github"></i></a>
-                        <a href="https://www.linkedin.com/in/brooke-cronin-60626423b/" target="_blank"><i
-                                class="fab fa-linkedin-in"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    <div id="footer"></div>
     <!-- Footer End -->
 
     <!-- Back to top button -->
@@ -202,7 +220,7 @@
 
     <!-- Pre Loader -->
     <div id="loader" class="show">
-        <div class="loader"></div>
+      <div class="loader"></div>
     </div>
 
     <!-- JavaScript Libraries -->
@@ -221,8 +239,13 @@
     <script src="mail/jqBootstrapValidation.min.js"></script>
     <script src="mail/contact.js"></script>
 
+    <!-- Navbar Javascript -->
+    <script src="js/navbar.js"></script>
+
+    <!-- Footer Javascript -->
+    <script src="js/footer.js"></script>
+
     <!-- Main Javascript -->
     <script src="js/portfolio-script.js"></script>
-</body>
-
+  </body>
 </html>

@@ -1,133 +1,169 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="utf-8">
+  <head>
+    <meta charset="utf-8" />
     <title>Brooke Cronin</title>
 
     <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- CSS Libraries -->
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-    <link href="lib/animate/animate.min.css" rel="stylesheet">
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+    <link href="lib/animate/animate.min.css" rel="stylesheet" />
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet" />
+
+    <script>
+      var currentPage = "portfolio";
+    </script>
 
     <!-- Navbar Stylesheet -->
-    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/navbar.css" />
 
     <!-- Footer Stylesheet -->
-    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/footer.css" />
 
     <!-- CSS Stylesheet -->
-    <link rel="stylesheet" href="css/portfolio.css">
+    <link rel="stylesheet" href="css/portfolio.css" />
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
-</head>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+  </head>
 
-<body data-spy="scroll" data-target=".navbar" data-offset="51">
+  <body data-spy="scroll" data-target=".navbar" data-offset="51">
     <!-- Nav Bar Start -->
     <div id="navbar"></div>
     <!-- Nav Bar End -->
 
-
     <!-- Hero Start -->
     <div class="hero">
-        <div class="container-fluid">
-            <div class="row align-items-center">
-                <div class="col-sm-12 col-md-6">
-                    <div class="hero-content">
-                    </div>
-                </div>
-            </div>
+      <div class="container-fluid">
+        <div class="row align-items-center">
+          <div class="col-sm-12 col-md-6">
+            <div class="hero-content"></div>
+          </div>
         </div>
+      </div>
     </div>
     <!-- Hero End -->
 
     <!-- Portfolio Start -->
     <div class="portfolio">
-        <div class="container">
-            <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
-                <p>My Portfolio</p>
-                <h2>Garden Clicker</h2>
-            </div>
-            <!-- <div class="project-tags">
+      <div class="container">
+        <div
+          class="section-header text-center wow zoomIn"
+          data-wow-delay="0.1s"
+        >
+          <p>My Portfolio</p>
+          <h2>Garden Clicker</h2>
+        </div>
+        <!-- <div class="project-tags">
             </div> -->
 
-            <div class="project-description">
-                <h5>Description</h5>
-                <p>"Garden Clicker" is an immersive 2D game that requires players to accumulate Garden Coins (GC)
-                    while protecting them from malicious bugs that frequently appear on the screen.
-                    To safeguard your precious coins and ten hearts, you must swiftly click on the bugs and vanquish
-                    them before they can cause any harm.
-                    The game also allows for an exciting challenge of speedrunning,
-                    where players aim to max out all of the available upgrades before completing the game.
-                    With vibrant graphics, immersive sound effects, and engaging gameplay mechanics,
-                    "Garden Clicker" provides an enjoyable and addictive gaming experience for players of all ages.</p>
-            </div>
-            <div class="images">
-                <h5>Video and Screenshots</h5>
-                <!-- Slider main container -->
-                <div class="swiper">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide"><video id="video" width="640" height="360" controls>
-                                <source src="vid/Garden Clicker Video Showcase.mp4" type="video/mp4">
-                                Your browser does not support the video tag.
-                            </video></div>
-                        <!-- Images -->
-                        <div class="swiper-slide"><img src="img/gcTitle.png"></div>
-                        <div class="swiper-slide"><img src="img/gcInstr.png"></div>
-                        <div class="swiper-slide"><img src="img/gcPlay.png"></div>
-                        <div class="swiper-slide"><img src="img/gcGameDone.png"></div>
-                    </div>
-                    <div class="swiper-pagination"></div>
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-button-next"></div>
-                </div>
-            </div>
-            <div class="timestamp-description">
-                <p></p>
-                <h5>Video Timestamps</h5>
-                <div class="timestamp">
-                    <button onclick="setVideoTime(3)">0:03</button>
-                    <p> - Instructions</p>
-                </div>
-                <div class="timestamp">
-                    <button onclick="setVideoTime(8)">0:08</button>
-                    <p> - Start of play through. Top right of screen shows how much coins you currently have.
-                        Top left of screen shows the number of lives you have left.
-                        Underneath on the left side is the upgrades.
-                        The name, current cost, and a progress bar showing how much you have purchased each upgrade is
-                        shown
-                        on each upgrade button.
-                        When hovering over the upgrade buttons, a description of what the upgrade does is shown.</p>
-                </div>
-                <div class="timestamp">
-                    <button onclick="setVideoTime(21)">0:21</button>
-                    <p> - Start of a bug attack. You must click all of the bugs before they disappear and steal your
-                        coins/lives.</p>
-                </div>
-            </div>
-            <div class="reasoning">
-                <h5>Why I Did This Project</h5>
-                <p>I made "Garden Clicker" for a client on fiverr.</p>
-                <p></p>
-            </div>
-            <div class="learn-description">
-                <h5>What I Learned From This Project</h5>
-                <li>The basics of Unreal Engine</li>
-                <li>How to use Unreal Engine blueprints and C++ code in my project</li>
-                <li>How to animate my widgets in Unreal Engine</li>
-                <li>How to add sound effects</li>
-                <li>How to switch between different widgets</li>
-                <p></p>
-            </div>
+        <div class="project-description">
+          <h5>Description</h5>
+          <p>
+            "Garden Clicker" is an immersive 2D game that requires players to
+            accumulate Garden Coins (GC) while protecting them from malicious
+            bugs that frequently appear on the screen. To safeguard your
+            precious coins and ten hearts, you must swiftly click on the bugs
+            and vanquish them before they can cause any harm. The game also
+            allows for an exciting challenge of speedrunning, where players aim
+            to max out all of the available upgrades before completing the game.
+            With vibrant graphics, immersive sound effects, and engaging
+            gameplay mechanics, "Garden Clicker" provides an enjoyable and
+            addictive gaming experience for players of all ages.
+          </p>
         </div>
+        <div class="images">
+          <h5>Video and Screenshots</h5>
+          <!-- Slider main container -->
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <video id="video" width="640" height="360" controls>
+                  <source
+                    src="vid/Garden Clicker Video Showcase.mp4"
+                    type="video/mp4"
+                  />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+              <!-- Images -->
+              <div class="swiper-slide"><img src="img/gcTitle.png" /></div>
+              <div class="swiper-slide"><img src="img/gcInstr.png" /></div>
+              <div class="swiper-slide"><img src="img/gcPlay.png" /></div>
+              <div class="swiper-slide"><img src="img/gcGameDone.png" /></div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+          <p></p>
+        </div>
+        <div class="timestamp-description">
+          <h5>Video Timestamps</h5>
+          <div class="timestamp">
+            <button onclick="setVideoTime(3)">0:03</button>
+            <p>- Instructions</p>
+          </div>
+          <div class="timestamp">
+            <button onclick="setVideoTime(8)">0:08</button>
+            <p>
+              - Start of play through. Top right of screen shows how much coins
+              you currently have. Top left of screen shows the number of lives
+              you have left. Underneath on the left side is the upgrades. The
+              name, current cost, and a progress bar showing how much you have
+              purchased each upgrade is shown on each upgrade button. When
+              hovering over the upgrade buttons, a description of what the
+              upgrade does is shown.
+            </p>
+          </div>
+          <div class="timestamp">
+            <button onclick="setVideoTime(21)">0:21</button>
+            <p>
+              - Start of a bug attack. You must click all of the bugs before
+              they disappear and steal your coins/lives.
+            </p>
+          </div>
+        </div>
+        <div class="reasoning">
+          <h5>Why I Did This Project</h5>
+          <p>I made "Garden Clicker" for a client on fiverr.</p>
+          <p></p>
+        </div>
+        <div class="learn-description">
+          <h5>What I Learned From This Project</h5>
+          <li>The basics of Unreal Engine</li>
+          <li>
+            How to use Unreal Engine blueprints and C++ code in my project
+          </li>
+          <li>How to animate my widgets in Unreal Engine</li>
+          <li>How to add sound effects</li>
+          <li>How to switch between different widgets</li>
+          <p></p>
+        </div>
+      </div>
     </div>
     <!-- Portfolio End -->
 
@@ -140,7 +176,7 @@
 
     <!-- Pre Loader -->
     <div id="loader" class="show">
-        <div class="loader"></div>
+      <div class="loader"></div>
     </div>
 
     <!-- JavaScript Libraries -->
@@ -167,6 +203,5 @@
 
     <!-- Main Javascript -->
     <script src="js/portfolio-script.js"></script>
-</body>
-
+  </body>
 </html>
