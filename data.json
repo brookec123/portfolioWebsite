@@ -136,9 +136,8 @@
             "name": "Garden Clicker",
             "type": "games",
             "shortDescription": "",
-            "skills": [
-                "Unreal Engine"
-            ],
+            "tags": ["Unreal Engine",
+                "C++", "Unreal Engine Blueprints", "Unreal Engine Widgets"],
             "mainImage": "img/gcTitle.png",
             "html": "garden-clicker.html",
             "sourceCode": null,
@@ -148,9 +147,8 @@
             "name": "Turn and Fortune",
             "type": "games",
             "shortDescription": "",
-            "skills": [
-                "Unreal Engine"
-            ],
+            "tags": ["Unreal Engine",
+                "C++", "Unreal Engine Blueprints", "Unreal Engine Widgets"],
             "mainImage": "img/tfTitle.png",
             "html": "turn-and-fortune.html",
             "sourceCode": null,
@@ -160,9 +158,8 @@
             "name": "Residential Evaluation",
             "type": "games",
             "shortDescription": "",
-            "skills": [
-                "Unreal Engine"
-            ],
+            "tags": ["Unreal Engine",
+                "C++", "Unreal Engine Blueprints", "Unreal Engine Widgets"],
             "mainImage": "img/residential-evaluation.png",
             "html": "residential-evaluation.html",
             "sourceCode": null,
@@ -172,9 +169,19 @@
             "name": "Personal Portfolio",
             "type": "websites",
             "shortDescription": "",
-            "skills": [
-                "HTML5"
-            ],
+            "tags": [
+                "HTML5", "VSCode"],
+            "mainImage": "img/portfolio-homescreen.png",
+            "html": "personal-portfolio.html",
+            "sourceCode": "https://github.com/brookec123/portfolioWebsite",
+            "tryIt": "index.html"
+        },
+        {
+            "name": "Open Command Folder",
+            "type": "websites",
+            "shortDescription": "",
+            "tags": ["Unreal Engine",
+                "C++", "Unreal Engine Blueprints", "Unreal Engine Widgets"],
             "mainImage": "img/portfolio-homescreen.png",
             "html": "personal-portfolio.html",
             "sourceCode": "https://github.com/brookec123/portfolioWebsite",

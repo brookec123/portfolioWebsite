@@ -12,7 +12,7 @@
     loader();
 
     // Initiate the wowjs
-    new WOW().init(); x
+    new WOW().init(); 
 
     // Back to top button
     $(window).scroll(function () {

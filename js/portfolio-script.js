@@ -71,6 +71,66 @@
         });
     }
 
+//     // Function to get project name from the HTML file name
+// function getProjectNameFromFile() {
+//     // Get the current file name from the URL
+//     const fileName = window.location.pathname.split("/").pop(); // e.g., "garden-clicker.html"
+
+//     // Remove the ".html" extension
+//     const baseName = fileName.replace(".html", ""); // e.g., "garden-clicker"
+
+//     // Replace dashes with spaces and capitalize each word
+//     const projectName = baseName
+//         .split("-") // Split by dashes
+//         .map((word) => word.charAt(0).toUpperCase() + word.slice(1)) // Capitalize each word
+//         .join(" "); // Join back into a single string
+
+//     return projectName;
+// }
+
+// const projectName = getProjectNameFromFile();
+// // Fetch data and dynamically populate tags for the project
+// document.addEventListener("DOMContentLoaded", () => {
+//     fetch("data.json")
+//         .then((response) => {
+//             if (!response.ok) {
+//                 throw new Error(`HTTP error! status: ${response.status}`);
+//             }
+//             return response.json();
+//         })
+//         .then((data) => {
+//             const project = data.projects.find((proj) => proj.name === projectName);
+
+//             if (project) {
+//                 populateTags(project.tags);
+//             } else {
+//                 console.error(`Project ${projectName} not found!`);
+//             }
+//         })
+//         .catch((error) => console.error("Error loading tags data:", error));
+// });
+
+// function populateTags(tags) {
+//     console.log("Populating tags...");
+//     const tagsContainer = document.querySelector(".project-tags");
+
+//     if (!tagsContainer) {
+//         console.error("Tags container not found!");
+//         return;
+//     }
+
+//     tags.forEach((tagName) => {
+//         console.log("Adding tag:", tagName);
+//         const tagItem = document.createElement("button");
+//         tagItem.textContent = "#"+tagName;
+//         tagItem.classList.add("tag-button");
+//         tagsContainer.appendChild(tagItem);
+//     });
+
+//     const paragraph = document.createElement("p");
+//     tagsContainer.appendChild(paragraph);
+// }
+
 })(jQuery);
 
 
@@ -99,4 +159,6 @@ const swiper = new Swiper('.swiper', {
 function setVideoTime(timeValue) {
     var vid = document.getElementById("video");
     vid.currentTime = timeValue;
+
+    swiper.slideTo(0, 100);
 }
